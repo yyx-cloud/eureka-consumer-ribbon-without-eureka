@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-consumer-ribbon-without-eureka
+
+server:
+  port: 9001
+
+info:
+  title: im a consumer
+
+eureka-provider:
+  ribbon:
+    listOfServers: 127.0.0.1:8001,127.0.0.1:8002
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
